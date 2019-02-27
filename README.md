@@ -36,7 +36,3 @@ Naam bestand: avatar_animated.py
 Maak een Python applicatie waarmee je random "Avatar Characters" (8x8) genereert en visualiseert op de Matrix van de SenseHat. Om een aantal seconden wordt een nieuw character gegenereerd.
 
 Uitbreiding: Maak de grote en kleur van het character en de snelheid van de loop instelbaar via CLI.
-
-- [x] nice
-- [x] nice
-- [x] 
