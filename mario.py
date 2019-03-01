@@ -1,4 +1,4 @@
-from sense_hat import SenseHat
+from sense_hat import SenseHat, ACTION_PRESSED, ACTION_HELD, ACTION_RELEASED
 
 sense = SenseHat()
 
@@ -33,4 +33,20 @@ O, br, b, O, O, b, br, O,
 O, O, O, O, O, O, O, O
 ]
 
-sense.set_pixels(mario_up)
+
+
+        
+def pushed_up():    
+        sense.clear(0,0,0)
+        sense.set_pixels(mario_up)
+        sense.clear(0,0,0)
+        sense.set_pixels(mario)
+
+
+sense.stick.direction_up = push_up()
+while True:
+  pass  # This keeps the program running to receive joystick events
+
+
+sense.set_pixels(mario)
+
